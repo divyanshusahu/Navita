@@ -260,27 +260,6 @@ html {
 	border: 1px solid orangered;
 	border-radius: 10px;
 }
-.services .services-text:hover{
-	background-color: orangered;
-	color: white;
-}
-.how-it-works .col-3:hover{
-	box-shadow: 10px 10px 5px lightgrey;
-}
-.how-it-works h3{
-	color: orangered;
-}
-#footer a{
-	color: white;
-	text-decoration: none;
-	margin:5px;
-}
-#footer a:hover{
-	color: orangered;
-}
-#footer i:hover{
-	color: orangered;
-}
 
 
 /* For desktop */
@@ -298,8 +277,230 @@ html {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+   
+    #maindiv{
+    	margin-top: -20px;
+    }
+    .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: white;
 
-    /* Login form style */
+    }
+    .main{
+    	position: relative;
+    	margin-top:-530px;
+    	font-size:30px;
+    	display:flex;
+    	width :400px;
+    	text-align: center;
+    }
+    span:nth-child(1){
+         border-style: double;
+         -webkit-transition: color  1s;
+         -webkit-transition: background  2s;
+        flex:1;
+    
+    }
+    span:nth-child(2){
+    	border-style: double;
+    	flex:1;
+    	-webkit-transition: color  1s;
+         -webkit-transition: background  2s;
+    }
+    span:nth-child(1):hover{
+    	
+    	background:white;
+    	color:black;
+
+    }
+    span:nth-child(2):hover{
+    	
+    	background:white;
+    	color:black;
+
+    }
+    #mainimg:after{
+    	display: inline-block;
+    }
+
+    .maindiv2{
+    	display: flex;
+    	margin-right: 20px;
+
+    }
+    .maindiv21{  
+    	font-family: 'Dancing Script', cursive;
+        background: white;	
+    	flex:2;
+    	margin-right: 20px
+    	font-weight:900;
+    	font-size: 20px;
+    }
+
+    .maindiv22{
+		flex:4;
+		height:470px;
+
+
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	margin-bottom: 25px;
+    }
+    .maindiv3{
+    	display: flex;
+    	margin-right: 20px;
+
+    }
+    .maindiv31{  
+    	font-family: 'Dancing Script', cursive;
+        background: white;	
+    	flex:1;
+    	margin-right: 20px;
+   	background-color: white;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	margin-bottom: 25px;
+    }
+    .maindiv32{
+		flex:1;
+		height:470px;
+		background-color: white;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	margin-bottom: 25px;
+
+    }
+    .maindiv4{
+    	display: flex;
+    	margin-right: 20px;
+
+    }
+    .maindiv42{  
+    	text-align: right;
+    	font-family: 'Dancing Script', cursive;
+        background: white;	
+    	flex:2;
+    	margin-right: 10px;
+    }
+    .maindiv41{
+		flex:4;
+		height:470px;
+		
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	margin-bottom: 25px;
+    }
+    .maindiv{
+    	display: flex;
+    	margin-right: 20px;
+
+    }
+    .maindiv51{  
+    	font-family: 'Dancing Script', cursive;
+        background: white;	
+    	flex:1;
+    	margin-right: 20px;
+   	background-color: white;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	margin-bottom: 25px;
+    }
+    .maindiv52{
+		flex:1;
+		height:470px;
+		background-color: white;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	margin-bottom: 25px;
+
+    }
+    #buttn{
+    	margin:auto;
+    	text-align: center;
+    	display: flex;
+    	width:330px;
+    	margin-top: 20px;
+    }
+    span#made2{
+    	color:midnightblue;
+    	background: white;
+    	width:40px;
+    	padding:8px;
+    	font-size: 30px;
+    	flex:1;
+    	margin-right:10px;
+    	-webkit-transition:color 1s;
+    	-webkit-transition:background-color 1.5s;
+    }
+     span#made2:hover{
+     	color:white;
+     	background: midnightblue;
+     }
+
+     div#fee{
+     	 font-family: 'Concert One', cursive;
+     	 font-size:40px;
+     	margin: auto;
+     	display: flex;
+     	width:500;
+     }
+     div#made3{
+     	flex:3;
+     	text-align: center;
+     }
+     div#made4{
+     	text-align: center;
+     	color:orange;
+     	flex:2;
+     }
+     div#ready{
+     	display: flex;
+
+     }
+  div#ready1{
+  	flex:4;
+  }
+  #ready2{
+  	flex:6;
+  	color:midnightblue;
+    	background: white;
+    	width:40px;
+    	padding:8px;
+    	font-size: 30px;
+  	border:double;
+  	padding
+  	-webkit-transition:color 1s;
+  	-webkit-transition:background 1.3s;
+  	margin-right:20px;
+  	text-align: center;
+  }
+  #ready2:hover{
+  	color:white;
+  	background:midnightblue; 
+  }
+  #random{width: 100%;
+  	z-index: 2;
+  	margin-top: 20px;
+  	background: black;
+  	opacity: 0.8;
+  }
+
+#last{
+	margin-top:180px;
+
+	width:100%;
+}
+
+	img { 
+    width: 100%;
+    -webkit-filter: blur(4px);filter: blur(4px);
+	}
+
+ 	.navbar{
+ 		margin-bottom: 0px;
+ 	}
+ 	.
+
     #logindiv .modal-content {
 		margin: 5% auto 15% auto; 
 		width: 50%;
