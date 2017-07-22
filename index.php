@@ -25,9 +25,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">Page 1</a></li>
-          <li><a href="#">Page 2</a></li> 
-          <li><a href="#">Page 3</a></li> 
+          <li><a href="#">List of PG's</a></li> 
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#" id="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -205,6 +203,7 @@
   					<li id="location-2">Location 2</li>
   					<li id="location-3">Location 3</li>
   					<li id="location-4">Location 4</li>
+            <li id="location-5">Location 5</li>
   				</ul>
   			</div>
   			<div class="col-9">
@@ -239,21 +238,57 @@
 
   <!-- Services -->
   <div class="services all-heading">
-    <div class="container">
+    <div class="container">          <!-- Note: Images copied from zocalo. So changes images -->
       <div class="page-header">
-        <h2>Zocalo Services</h2>
+        <h2>Navita Services</h2>
       </div>
       <div class="row1">
-        <div class="col-6 rental">
+        <a href="rental_aggrement.php"><div class="col-6 rental">
           <center>
             <div class="services-text">
-              <h4>Create Rental Aggrement</h4>
+              <h4><i class="fa fa-file-text-o"></i> Create Rental Aggrement</h4>
             </div>
+          </center>
+        </div></a>
+        <div class="col-1"></div>
+        <a href="maovers_and_packers.php"><div class="col-5 movers">
+        <center>
+          <div class="services-text">
+            <h4>Movers and Packers</h4>
+          </div>
+        </center>
+        </div></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="how-it-works all-heading">
+    <div class="container">
+      <div class="page-header">
+        <h2>How it Works</h2>
+      </div>
+      <div class="row1">
+        <div class="col-1"></div>
+        <div class="col-3">
+          <center>
+            <h3>Search</h3>
+            <p>Browse through verified and detailed listings with real photos. Search on our map based interface by price, location, city or otherwise. Available on your nearest phone, tab or desktop</p>
           </center>
         </div>
         <div class="col-1"></div>
-        <div class="col-5 movers">
-
+        <div class="col-3">
+          <center>
+            <h3>Connect</h3>
+            <p>Directly connect with genuine people for free! Ya, you read it right, no brokers here. Find the perfect roommate through social connect and the perfect place to stay through hood views</p>
+          </center>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-3">
+          <center>
+            <h3>Move In</h3>
+            <p>Move-in to your preferred listing with a single click. We love feedback. If you like us, do share with your friends and if you hate us, do let us know. Happy hunting my dear friend</p>
+          <center>
         </div>
       </div>
     </div>
@@ -262,14 +297,24 @@
   <!-- Footer -->
   <footer id="footer" >   
 	<div class="container-made"> 
+    <div>
+      <center>
+        <a href="#">About us</a> |
+        <a href="#">Contact us</a> |
+        <a href="#">Careers</a> |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Blog</a> |
+        <a href="#">Terms and Conditions</a>
+      </center>
+    </div>
 		<div id="follow">
 			<center>
 				<h3>Follow us on</h3>
-					<i class="fa fa-facebook" style="font-size:40px; color:white"></i>
-					<i class="fa fa-twitter" style="font-size:40px; color:white"></i>
-					<i class="fa fa-linkedin" style="font-size:40px; color:white"></i>
-					<i class="fa fa-google-plus" style="font-size:40px; color:white"></i>
-					<i class="fa fa-youtube" style="font-size:40px; color:white"></i>
+					<a href="#"><i class="fa fa-facebook" style="font-size:40px; color:white"></i></a>
+					<a href="#"><i class="fa fa-twitter" style="font-size:40px; color:white"></i></a>
+					<a href="#"><i class="fa fa-linkedin" style="font-size:40px; color:white"></i></a>
+					<a href="#"><i class="fa fa-google-plus" style="font-size:40px; color:white"></i></a>
+					<a href="#"><i class="fa fa-youtube" style="font-size:40px; color:white"></i></a>
 				</div>
 			</center>
 		</div> 
