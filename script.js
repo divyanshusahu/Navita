@@ -55,23 +55,34 @@ $(document).ready(function(){
 		$('#location-2').removeClass("active");
 		$('#location-3').removeClass("active");
 		$('#location-4').removeClass("active");
+		$('#location-5').removeClass("active");
 	});
 	$('#location-2').click(function(){
 		$('#location-1').removeClass("active");
 		$('#location-2').addClass("active");
 		$('#location-3').removeClass("active");
 		$('#location-4').removeClass("active");
+		$('#location-5').removeClass("active");
 	});
 	$('#location-3').click(function(){
 		$('#location-1').removeClass("active");
 		$('#location-2').removeClass("active");
 		$('#location-3').addClass("active");
 		$('#location-4').removeClass("active");
+		$('#location-5').removeClass("active");
 	});
 	$('#location-4').click(function(){
 		$('#location-1').removeClass("active");
 		$('#location-2').removeClass("active");
 		$('#location-3').removeClass("active");
 		$('#location-4').addClass("active");
+		$('#location-5').removeClass("active");
+	});
+	$('#location-5').click(function(){
+		$('#location-1').removeClass("active");
+		$('#location-2').removeClass("active");
+		$('#location-3').removeClass("active");
+		$('#location-4').removeClass("active");
+		$('#location-5').addClass("active");
 	});
 });
