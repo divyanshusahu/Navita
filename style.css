@@ -260,6 +260,27 @@ html {
 	border: 1px solid orangered;
 	border-radius: 10px;
 }
+.services .services-text:hover{
+	background-color: orangered;
+	color: white;
+}
+.how-it-works .col-3:hover{
+	box-shadow: 10px 10px 5px lightgrey;
+}
+.how-it-works h3{
+	color: orangered;
+}
+#footer a{
+	color: white;
+	text-decoration: none;
+	margin:5px;
+}
+#footer a:hover{
+	color: orangered;
+}
+#footer i:hover{
+	color: orangered;
+}
 
 
 /* For desktop */
