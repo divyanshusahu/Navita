@@ -62,7 +62,7 @@
 
  			$servername = "localhost";
 			$username = "root";
-			$password = "burnitdown";
+			$password = "**********";
 			$dbname = "navita";
 			$conn = new mysqli($servername, $username, $password, $dbname);
 			if ($conn->connect_error)
