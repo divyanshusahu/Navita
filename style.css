@@ -1,0 +1,367 @@
+/* Universal style start */
+* {
+    box-sizing: border-box;
+}
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Login form style */
+#logindiv input[type=email], #logindiv input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#logindiv button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+#logindiv button:hover {
+    opacity: 0.8;
+}
+#logindiv .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+#logindiv .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+#logindiv img.avatar {
+    width: 35%;
+    border-radius: 50%;
+    height:auto;
+}
+#logindiv .container1 {
+    padding: 16px;
+}
+#logindiv span.password {
+    float: right;
+    padding-top: 16px;
+}
+#logindiv .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+#logindiv .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%; 
+}
+#logindiv .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+#logindiv .close:hover,.close:focus{
+    color: red;
+    cursor: pointer;
+}
+#logindiv .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+#logindiv @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+#logindiv @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+/* Universal style end */
+
+/* Sign up page */
+.wrapper{
+	width:90%;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+#footer{
+    padding: 10px 0; 
+    background-color: #101010; 
+    width: 100%;   
+	padding:20px; 
+	color:#9d9d9d;   
+}
+#footer h3 {
+	color:rgb(255,255,255);
+}
+#head{
+	margin:0px 0px 40px 0px;
+	color:orange;
+	border-bottom: 2px solid orange;
+}
+#follow{
+	display:none;
+}
+#leftimage{
+	display:none;
+}
+#rightform{
+	margin: 0px 20px 30px 20px;
+	padding:10% 12% 15% 12%;
+}
+/* Sign up page style end */
+
+/* Index page style */
+#introduction{
+	background-image: url('img/2.jpg');
+	height:auto;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#introduction .wrapper{
+	width:100%;
+	background-color: rgba(0,0,0,0.5);
+	height:auto;
+	color:white;
+}
+#introduction .introtext{
+	margin:80px auto 0px auto;
+	text-align: center;
+}
+#introduction .container{
+	padding:10px 10px 10px 20px;
+}
+#introduction .searchbox{
+	text-align: center;
+	margin:40px 0px;
+}
+#introduction .top-reviews{
+	height:180px;
+	margin:40px 0px 0px 0px;
+	width:95%;
+}
+#introduction #user2, #introduction #user3{
+	display: none;
+}
+#introduction .review-selector{
+	text-align: center;
+	font-size:44px;
+	color:grey;
+}
+#introduction .active{
+	color:rgb(255,100,100);
+}
+#introduction span{
+	cursor:pointer;
+}
+#introduction img{
+	border-radius: 50%;
+}
+#introduction .col-3{
+	padding-bottom: 0px;
+}
+.requirements{
+	background-color: lightgrey;
+	height:auto;
+	border-bottom: 2px solid orange;
+	display: none;
+}
+.page-header{
+	text-align: center;
+}
+.all-heading{
+	border-bottom: 1.5px solid orange;
+	margin-bottom: 20px;
+	padding-bottom: 40px;
+}
+.trending-properties h5{
+	border-bottom: 1px solid orangered;
+	color: rgb(255,99,71);
+	padding-bottom: 2px;
+}
+.trending-properties .col-4{
+	box-shadow: 10px 10px 5px lightgrey;
+}
+.reviews ul{
+	list-style-type: none;
+	cursor: pointer;
+}
+.reviews li{
+	background-color: lightgrey;
+	text-align: center;
+	height: 72px;
+	border-bottom: 1px solid white;
+	padding-top: 25px; 
+}
+.reviews li:hover{
+	background-color: orangered;
+	color: white;
+}
+.reviews .active{
+	background-color: orangered;
+	color: white;
+}
+.reviews img{
+	border-radius: 50%;
+}
+.reviews .bottom-review{
+	box-shadow: 4px 2px 3px grey;
+	margin: 5px 5px 15px 5px;
+	background-color: rgba(0,0,0,0.02);
+}
+.locations{
+	display: none;
+}
+.services .rental{
+	background-image: url("img/rental.jpg");
+	background-repeat: no-repeat;
+	height: 260px;
+	background-size: 100% 100%;
+	box-shadow: 10px 10px 5px lightgrey;
+}
+.services .movers{
+	background-image: url("img/move_img.jpg");
+	background-repeat: no-repeat;
+	height: 260px;
+	background-size: 100% 100%;
+	box-shadow: 10px 10px 5px lightgrey;
+}
+.services .services-text{
+	color: orangered;
+	background-color: white;
+	text-align: center;
+	position: relative;
+	top:100px;
+	width: 55%;
+	border: 1px solid orangered;
+	border-radius: 10px;
+}
+
+
+/* For desktop */
+@media only screen and (min-device-width: 768px) {
+	/* Unoversal style */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    /* Login form style */
+    #logindiv .modal-content {
+		margin: 5% auto 15% auto; 
+		width: 50%;
+	}
+	#logindiv img.avatar {
+    width: 25%;
+    height:auto;
+	}
+    /* End of universal style */
+
+    /* Sign up page style */
+    #rightform{
+	margin: 200px 0px 0px 0px;
+	padding:10px;
+	}
+	#leftimage{
+	display: block;
+	background-image: url('img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	min-height: 100vh;
+	text-align: center;
+	}
+	#leftimage h3{
+	color:grey;
+	}
+	#leftimage h1{
+	font-size:60px;
+	}
+	#head{
+		display:none;
+	}
+	.form-control{
+		height:48px;
+		font-size:24px;
+	}
+	.container-made{
+		margin-right: 20%;
+		margin-left: 20%;
+	}
+	.radio-inline{
+		font-size:18px;
+	}
+	.btn{
+		height:48px;
+		font-size: 24px;
+	}
+	#follow{
+		display:block;
+		margin-top:10px;
+		margin-bottom: 20px;
+	}
+	#follow i {
+		margin:10px;
+	}
+	/* End of sign up page style */
+
+	/* Index page style */
+	#introduction{
+		height:65vh;
+	}
+	#introduction .wrapper{
+		height:65vh;
+	}
+	#introduction .searchbox{
+		margin: 80px 0px;
+	}
+	#introduction .top-reviews{
+		font-size: 16px;
+	}
+	#introduction .col-3{
+		text-align: right;
+	}
+	#introduction .col-9{
+		padding-top: 50px;
+	}
+	.requirements{
+		display: block;
+	}
+	.reviews .col-3{
+		text-align: center;
+	}
+	.locations{
+		display: block;
+	}
+}
