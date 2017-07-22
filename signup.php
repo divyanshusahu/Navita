@@ -62,7 +62,7 @@
 
       $servername = "localhost";
       $username = "root";
-      $password = "**********";
+      $password = "burnitdown";
       $dbname = "navita";
       $conn = new mysqli($servername, $username, $password, $dbname);
       if ($conn->connect_error)
@@ -160,24 +160,34 @@
 
 
   <!-- Footer -->
-  <footer id="footer" >   
-	<div class="container-made"> 
-		<div id="follow">
-			<center>
-				<h3>Follow us on</h3>
-					<i class="fa fa-facebook" style="font-size:40px; color:white"></i>
-					<i class="fa fa-twitter" style="font-size:40px; color:white"></i>
-					<i class="fa fa-linkedin" style="font-size:40px; color:white"></i>
-					<i class="fa fa-google-plus" style="font-size:40px; color:white"></i>
-					<i class="fa fa-youtube" style="font-size:40px; color:white"></i>
-				</div>
-			</center>
-		</div> 
+ <footer id="footer" >   
+  <div class="container-made"> 
+    <div>
+      <center>
+        <a href="#">About us</a> |
+        <a href="#">Contact us</a> |
+        <a href="#">Careers</a> |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Blog</a> |
+        <a href="#">Terms and Conditions</a>
+      </center>
+    </div>
+    <div id="follow">
+      <center>
+        <h3>Follow us on</h3>
+          <a href="#"><i class="fa fa-facebook" style="font-size:40px; color:white"></i></a>
+          <a href="#"><i class="fa fa-twitter" style="font-size:40px; color:white"></i></a>
+          <a href="#"><i class="fa fa-linkedin" style="font-size:40px; color:white"></i></a>
+          <a href="#"><i class="fa fa-google-plus" style="font-size:40px; color:white"></i></a>
+          <a href="#"><i class="fa fa-youtube" style="font-size:40px; color:white"></i></a>
+        </div>
+      </center>
+    </div> 
         <center>
- 			    <p>Copyright &copy;Navita. All Rights Reserved  |  Contact Us: +91 7577045235</p> 
-     	</center>  
+          <p>Copyright &copy;Navita. All Rights Reserved  |  Contact Us: +91 7577045235</p> 
+      </center>  
      </div> 
-  </footer>  
+  </footer>
 
   <script type="text/javascript" src="script.js" ></script>
 
