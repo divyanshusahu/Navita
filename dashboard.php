@@ -1,193 +1,246 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Plaster" rel="stylesheet">
-  <script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
+	<title>List of PG's</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/cc6df5477b.js"></script>
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Bellefair|Concert+One|Dancing+Script|Pacifico" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Dashboard</title>
-  
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript">
-      $(function(){
-
-
-       });
-    </script>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Plaster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bellefair|Concert+One|Dancing+Script|Pacifico" rel="stylesheet">
 </head>
 <body>
-  <!-- Responsive Navigation Bar  -->
-  <nav class="navbar navbar-inverse ">
+	<nav class="navbar navbar-inverse navbar-fixed-top ">
     <div class="container">
       <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-          </button>
-          <a class="navbar-brand" href="index.php">Navita</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="index.php">Navita</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li> 
-            <li><a href="#">Page 3</a></li> 
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" id="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          </ul>
+        <ul class="nav navbar-nav">
+          <li><a href="index.php">Home</a></li>
+          <li><a href="#">List of PG's</a></li> 
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" id="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        </ul>
       </div>
     </div>
   </nav>
-  <br><br></body>
-  <div id="maindiv" style="height:640px">
-  <div><img id="mainimg" src="img/wall.jpg" width="100%" height="600px"></div>
-  <div class="center">Some Name</div>
-  <span class="center main" >
-    <span id="made">Walk in</span>
-    <span id="made">Book Now!!</span>
-  </span>
+
+
+  <!-- Login div modal -->
+  <div id="logindiv" class="modal">
+    <form class="modal-content animate" action="#" method="post">
+      <div class="imgcontainer">
+        <span class="close" title="Close">&times;</span>
+        <img src="img/avatar1.jpg" alt="Avatar" class="avatar">
+      </div>
+      <div class="container1">
+        <label><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>        
+        <button type="submit" name="login">Login</button>
+        <input type="checkbox" checked="checked"> Remember me
+      </div>
+      <div class="container1" id="loginbottom">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="password">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
   </div>
-  <div class="container container-fluid">
-  <hr>
-   <div class="maindiv2">
-    <div class="maindiv21">
-     <h1>Chill in your Lounge.</h1>
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </div>
-    <div class="maindiv22" >
-      <img src="img/lounge1.jpg" style="-webkit-filter:none" height="440px" >
-    </div>
+
+  <!-- Starting introduction -->
+  <div class="dashboard-introduction">
+  	<div class="dashboard-introduction-wrapper">
+  		<center><h4 class="dashboard-introduction-heading">Some text</h4></center>
+  		<center><p>Some more text</p></center>
+  		<div class="container">
+				<div class="row1">
+					<div class="col-2 desktop-display"></div>
+					<div class="col-4">
+						<a href="#"><span>Walk in</span></a>
+					</div>
+					<div class="col-4">
+						<a href="#"><span>Book Now!!</span></a>
+					</div>
+					<div class="col-2 desktop-display"></div>
+				</div>
+  		</div>
+  	</div>
   </div>
-  
-  <div class="maindiv3">
-    <div class="maindiv31">
-   <img src="img/lounge2.jpg" style="-webkit-filter:none" height="440px" >
-    </div>
-    <div class="maindiv32" >
-      <img src="img/lounge3.jpg" style="-webkit-filter:none" height="440px" >
-    </div>
+
+  <!-- Details  -->
+  <div class="dashboard-details">
+  	<div class="container">
+  		<div class="dashboard-details-seperator">
+  			<div class="row1">
+  				<div class="col-4">
+  					<h3><b>CHILL IN YOUR LOUNGE</b></h3>
+  					<p>Dine and play with your friends in the lavish lounge area.</p>
+  				</div>
+  				<div class="col-8">
+  					<img src="img/dash1.jpg" width="100%" title="CHILL IN YOUR LOUNGE">
+  				</div>
+  			</div>
+  			<div class="row1">
+  				<div class="col-6">
+  					<img src="img/dash2.jpg" width="100%" title="CHILL IN YOUR LOUNGE">
+  				</div>
+  				<div class="col-6">
+  					<img src="img/dash3.jpg" width="100%" title="CHILL IN YOUR LOUNGE">
+  				</div>
+  			</div>
+  		</div>
+  		<div class="dashboard-details-seperator">
+  			<div class="row1">
+  				<div class="col-4">
+  					<h3><b>ENJOY YOUR OWN SPACE</b></h3>
+  					<p>Compact yet luxurious space at the heart of the city.</p>
+  				</div>
+  				<div class="col-8">
+  					<img src="img/dash4.jpg" width="100%" title="ENJOY YOUR OWN SPACE">
+  				</div>
+  			</div>
+  			<div class="row1">
+  				<div class="col-6">
+  					<img src="img/dash5.jpg" width="100%" title="ENJOY YOUR OWN SPACE">
+  				</div>
+  				<div class="col-6">
+  					<img src="img/dash6.jpg" width="100%" title="ENJOY YOUR OWN SPACE">
+  				</div>
+  			</div>
+  		</div>
+  		<div class="dashboard-details-seperator">
+  			<div class="row1">
+  				<div class="col-4">
+  					<h3><b>MODERN KITCHEN WITH LIVE-COOKING</b></h3>
+  					<p>Enjoy freshly cooked wholesome meals</p>
+  				</div>
+  				<div class="col-8">
+  					<img src="img/dash7.jpg" width="100%" title="MODERN KITCHEN WITH LIVE-COOKING">
+  				</div>
+  			</div>
+  			<div class="row1">
+  				<div class="col-6">
+  					<img src="img/dash8.jpg" width="100%" title="MODERN KITCHEN WITH LIVE-COOKING">
+  				</div>
+  				<div class="col-6">
+  					<img src="img/dash9.jpg" width="100%" title="MODERN KITCHEN WITH LIVE-COOKING">
+  				</div>
+  			</div>
+  		</div>
+  		<div class="dashboard-details-seperator">
+  			<div class="row1">
+  				<div class="col-4">
+  					<h3><b>PREMIUM SHOWER & WASHROOM</b></h3>
+  					<p>Clean and hygienic washrooms</p>
+  				</div>
+  				<div class="col-8">
+  					<img src="img/dash10.jpg" width="100%" title="PREMIUM SHOWER & WASHROOM">
+  				</div>
+  			</div>
+  		</div>
+  	</div>
   </div>
-  <hr>
-  <div class="maindiv4">
-   
-    <div class="maindiv41" >
-      <img src="img/lounge1.jpg" style="-webkit-filter:none" height="440px" >
-    </div>
-     <div class="maindiv42">
-     <h1>Chill in your Lounge.</h1>
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </div>
+
+  <!-- Fee structure -->
+  <div class="dashboard-fee">
+  	<div class="container">
+			<center>
+				<h2><b>MONTHLY FEE </b></h2>
+				<div class="dashboard-details-seperator">
+					<span id="single">Single</span>
+					<span class="dashboard-selector-active" id="twin">Twin</span>
+				</div>
+				<div class="dashboard-details-seperator">
+					<span class="deco"><b>PER HEAD COST </b></span>
+					<b><i class="fa fa-inr"></i></b><span id="cost-value" class="deco" >1000</span>
+					<a href=""#><p>*Terms and conditions</p></a>
+				</div>
+			</center>	
+			<div class="dashboard-ready-confirm dashboard-details-seperator">
+				<div class="row1">
+					<div class="col-1 desktop-display"></div>
+					<div class="col-2"><h2>Ready Yet?</h2></div>
+					<div class="col-1 desktop-display"></div>
+					<div class="col-3">
+						<a href="#"><span>Walk in</span></a>
+					</div>
+					<div class="col-1 desktop-display"></div>
+					<div class="col-3">
+						<a href="#"><span>Book Now</span></a>
+					</div>
+					<div class="col-1 desktop-display"></div>
+				</div>	
+			</div>
+  	</div>
   </div>
-  <div class="maindiv3">
-    <div class="maindiv31">
-   <img src="img/lounge2.jpg" style="-webkit-filter:none" height="440px" >
-    </div>
-    <div class="maindiv32" >
-      <img src="img/lounge3.jpg" style="-webkit-filter:none" height="440px" >
-    </div>
-  </div><hr>
-  <div class="maindiv2">
-    <div class="maindiv21">
-   <h1 style=""  ><u>Chill in your Lounge.</u></h1>
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </div><hr width="1" size="500">
-    <div class="maindiv22" >
-      <img src="img/lounge1.jpg" style="-webkit-filter:none" height="440px" >
-    </div>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+			$("#single").click(function(){
+				$("#single").addClass("dashboard-selector-active");
+				$("#twin").removeClass("dashboard-selector-active");
+				document.getElementById("cost-value").innerHTML = "2000";
+			});
+			$("#twin").click(function(){
+				$("#single").removeClass("dashboard-selector-active");
+				$("#twin").addClass("dashboard-selector-active");
+				document.getElementById("cost-value").innerHTML = "1000";
+			});
+		});
+  </script>
+
+  <!-- Conclusion -->
+  <div class="dashboard-conclusion">
+		<div class="black-div">
+			<div class="container">
+				<h1>What is Lorem Ipsum?</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>	
   </div>
-  <div class="maindiv3">
-    <div class="maindiv31">
-   <img src="img/lounge2.jpg" style="-webkit-filter:none" height="440px" >
+
+  <!-- Footer -->
+  <footer id="footer" >   
+	<div class="container-made"> 
+    <div class="navita-conditions">
+      <center>
+        <a href="#">About us</a> |
+        <a href="#">Contact us</a> |
+        <a href="#">Careers</a> |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Blog</a> |
+        <a href="#">Terms and Conditions</a>
+      </center>
     </div>
-    <div class="maindiv32" >
-      <img src="img/lounge3.jpg" style="-webkit-filter:none" height="440px" >
-    </div>
-  </div>
-  <div class="maindiv4">
-   
-    <div class="maindiv41" >
-      <img src="img/lounge1.jpg" style="-webkit-filter:none" height="440px" >
-    </div>
-     <div class="maindiv42">
-     <h1>Chill in your Lounge.</h1>
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </div>
-  </div>
-  <hr>
+		<div id="follow">
+			<center>
+				<h3>Follow us on</h3>
+					<a href="#"><i class="fa fa-facebook" style="font-size:40px; color:white"></i></a>
+					<a href="#"><i class="fa fa-twitter" style="font-size:40px; color:white"></i></a>
+					<a href="#"><i class="fa fa-linkedin" style="font-size:40px; color:white"></i></a>
+					<a href="#"><i class="fa fa-google-plus" style="font-size:40px; color:white"></i></a>
+					<a href="#"><i class="fa fa-youtube" style="font-size:40px; color:white"></i></a>
+				</div>
+			</center>
+		</div> 
+        <center>
+ 			    <p>Copyright &copy;Navita. All Rights Reserved  |  Contact Us: +91 7577045235</p> 
+     	</center>  
+     </div> 
+  </footer> 
 
-  <div style="text-align: center;width: 100%;font-size: 50px;font-family: 'plaster',cursive">MONTHLY FEE</div>
-  <div id="buttn">
-  <span id="made2" >
-    Single
-  </span>
-  <span id="made2"  >
-    Twin
-  </span >
-  </div>
-  <hr>
+  <script src="script.js" rel="text/javascript"></script>
 
-  <div id="fee">
-  <div id="made3" >
-    Per Head cost
-  </div>
-  <div id="made4"  >
-   <i class="fa fa-inr"></i>15000
-
-
-  </div >
-
-  </div>
-  <div style="margin-left:30%;"><a href="#">*Terms And Conditions</a></div>
-  <hr>
-  <div id="ready">
-  <div id="ready1"  style="text-align: center;font-size: 30px;margin-bottom: -3px">Ready Yet?</div>
-
-    <span id="ready2">Walk in</span>
-    <span id="ready2">Book Now!!</span>
-
-</div>
-</div>
-
-<div id="random" style="height:250px">
-  <img src="img/random.jpg" width="100%" style="-webkit-filter:none;z-index: -1" height="600px">
-  
-
-</div>
-<div style="text-align: center;font-weight: 500">l
-<h1>What is Lorem Ipsum?</h1>
-<DIV class=" container container-fluid">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</DIV>
-</div>
-
-</div>
-    <div class="row text-center" id="last" >
-    <div style="margin-left:50px;margin-top:50px;">
-      <h2 style="color:midnightblue">You can catch us on!</h2>
-      <span id="sm" class="fa-stack fa-3x">
-  <a href="#"><i class="fa fa-circle fa-stack-2x" target="_blank"></i>
-    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a>
-</span>
-      <a href="#"" target="_blank">
-      <span id="sm" class="fa-stack fa-3x">
-  <i class="fa fa-circle fa-stack-2x"></i>
-  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-        </span>
-        </a>
-
-      <a href="# target="_blank"><span id="sm" class="fa-stack fa-3x">
-  <i class="fa fa-circle fa-stack-2x"></i>
-  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-        </span></a>
-        </div></div>
-        <hr>
-        <footer>Made by <a href="https://www.facebook.com/subrat.sahu.1998">subrat</a> and <a href="#">Divyanshu</a></footer>
 </body>
-
 </html>
