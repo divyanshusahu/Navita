@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/cc6df5477b.js"></script>
@@ -60,7 +61,7 @@
 
  			$servername = "localhost";
 			$username = "root";
-			$password = "**********";
+			$password = "burnitdown";
 			$dbname = "navita";
 			$conn = new mysqli($servername, $username, $password, $dbname);
 			if ($conn->connect_error)
@@ -101,31 +102,31 @@
   			<div class="top-reviews">
   				<div class="row1" id="user1">
   					<div class="col-3">
-  					<img src="img/user1.jpg" alt="user image 1">
+  					<img src="img/user1.jpg" alt="user image 1"><br><br>
   					<p><b>User name 1</b></p>
   					</div>
   					<div class=col-9>
-  					<p>Navita rating</p>
+  					<p class="color-orangered">Navita rating</p>
   					<p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
   					</div>
   				</div>
   				<div class="row1" id="user2">
   					<div class="col-3">
-  					<img src="img/user2.jpg" alt="user image 2">
+  					<img src="img/user2.jpg" alt="user image 2"><br><br>
   					<p><b>User name 2</b></p>
   					</div>
   					<div class=col-9>
-  					<p>Navita rating</p>
+  					<p class="color-orangered">Navita rating</p>
   					<p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
   					</div>
   				</div>
   				<div class="row1" id="user3">
   					<div class="col-3">
-  					<img src="img/user3.jpg" alt="user image 3">
+  					<img src="img/user3.jpg" alt="user image 3"><br><br>
   					<p><b>User name 3</b></p>
   					</div>
   					<div class=col-9>
-  					<p>Navita rating</p>
+  					<p class="color-orangered">Navita rating</p>
   					<p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
   					</div>
   				</div>
@@ -146,18 +147,17 @@
   	<div class="container">
   		<div class="row1">
   			<div class="col-3">
-  				<div class="bor"><h4>Rental Aggrement</h4></div>
+  				<div><center><a href="#"><h4><i class="fa fa-file-text-o"></i> Rental Aggrement</h4></a></center></div>
   			</div>
   			<div class="col-6">
-  				<div class="bor"><h4>Tell us your requirements</h4></div>
+  				<div><center><a href="#"><h4>Tell us your requirements</h4></a></center></div>
   			</div>
   			<div class="col-3">
-  				<div class="bor"><h4>Write a review</h4></div>
+  				<div><center><a href="#"><h4>Write a review</h4></a></center></div>
   			</div>
   		</div>
   	</div>
   </div>   
-  <!-- To be completed -->
 
   <!-- Trending properties -->
   <div class="trending-properties all-heading">
@@ -165,28 +165,76 @@
   		<div class="page-header">
   		<h2>Trending Properties</h2>
   		</div>
-  		<div class="properties">
-  			<div class="row1">
-  				<div class="col-4">
-  					<h5><b>Boys CoHo</b></h5>
-  					<p><i class="fa fa-map-marker"></i> Location</p>
-  					<p><i class="fa fa-rupee"></i> Money</p>
-  					<img src="img/tp1.jpg" width="100%">   <!-- Replace images, images copied from zocalo -->
-  				</div>
-  				<div class="col-4">
-  					<h5><b>Boys CoHo</b></h5>
-  					<p><i class="fa fa-map-marker"></i> Location</p>
-  					<p><i class="fa fa-rupee"></i> Money</p>
-  					<img src="img/tp2.jpg" width="100%">
-  				</div>
-  				<div class="col-4">
-  					<h5><b>Boys CoHo</b></h5>
-  					<p><i class="fa fa-map-marker"></i> Location</p>
-  					<p><i class="fa fa-rupee"></i> Money</p>
-  					<img src="img/tp3.jpg" width="100%">
-  				</div>
-  			</div>
-  		</div>
+      <div class="w3-content w3-display-container">
+  		  <div class="trending-properties-1">
+          <div class="row1">
+  				  <div class="col-4 mySlides" id="tp1">
+              <h5><b>Boys CoHo 1</b></h5>
+  		        <p><i class="fa fa-map-marker"></i> Location</p>
+  		        <p><i class="fa fa-rupee"></i> Money</p>
+  		        <img src="img/tp1.jpg" width="100%">   <!-- Replace images, images copied from zocalo -->
+  				  </div>
+  				  <div class="col-4 mySlides" id="tp2">
+              <h5><b>Boys CoHo 2</b></h5>
+              <p><i class="fa fa-map-marker"></i> Location</p>
+              <p><i class="fa fa-rupee"></i> Money</p>
+              <img src="img/tp2.jpg" width="100%">
+  				  </div>
+  				  <div class="col-4 mySlides" id="tp3">
+              <h5><b>Boys CoHo 3</b></h5>
+  				    <p><i class="fa fa-map-marker"></i> Location</p>
+              <p><i class="fa fa-rupee"></i> Money</p>
+              <img src="img/tp3.jpg" width="100%">
+  				  </div>
+          </div>
+  		  </div>
+        <div class="trending-properties-1">
+          <div class="row1">
+            <div class="col-4 mySlides" id="tp4">
+              <h5><b>Boys CoHo 4</b></h5>
+              <p><i class="fa fa-map-marker"></i> Location</p>
+              <p><i class="fa fa-rupee"></i> Money</p>
+              <img src="img/tp2.jpg" width="100%">   <!-- Replace images, images copied from zocalo -->
+            </div>
+            <div class="col-4 mySlides" id="tp5">
+              <h5><b>Boys CoHo 5</b></h5>
+              <p><i class="fa fa-map-marker"></i> Location</p>
+              <p><i class="fa fa-rupee"></i> Money</p>
+              <img src="img/tp3.jpg" width="100%">
+            </div>
+            <div class="col-4 mySlides" id="tp6">
+              <h5><b>Boys CoHo 6</b></h5>
+              <p><i class="fa fa-map-marker"></i> Location</p>
+              <p><i class="fa fa-rupee"></i> Money</p>
+              <img src="img/tp1.jpg" width="100%">
+            </div>
+          </div>
+        </div>
+        <div class="trending-properties-1">
+          <div class="row1">
+            <div class="col-4 mySlides" id="tp7">
+              <h5><b>Boys CoHo 7</b></h5>
+              <p><i class="fa fa-map-marker"></i> Location</p>
+              <p><i class="fa fa-rupee"></i> Money</p>
+              <img src="img/tp3.jpg" width="100%">   <!-- Replace images, images copied from zocalo -->
+            </div>
+            <div class="col-4 mySlides" id="tp8">
+              <h5><b>Boys CoHo 8</b></h5>
+              <p><i class="fa fa-map-marker"></i> Location</p>
+              <p><i class="fa fa-rupee"></i> Money</p>
+              <img src="img/tp1.jpg" width="100%">
+            </div>
+            <div class="col-4 mySlides" id="tp9">
+              <h5><b>Boys CoHo 9</b></h5>
+              <p><i class="fa fa-map-marker"></i> Location</p>
+              <p><i class="fa fa-rupee"></i> Money</p>
+              <img src="img/tp2.jpg" width="100%">
+            </div>
+          </div>
+        </div>
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div> 
   	</div>
   </div>
 
@@ -206,31 +254,154 @@
             <li id="location-5">Location 5</li>
   				</ul>
   			</div>
-  			<div class="col-9">
-  				<div class="bottom-review">
-  					<div class="row1">
-  						<div class="col-3">
-  							<img src="img/user1.jpg">
-  							<p>Name</p>
-  						</div>
-  						<div class="col-9">
-  							<p>Navita Rating</p>
-  							<p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
-  						</div>
-  					</div>
-  				</div>
-  				<div class="bottom-review">
-  					<div class="row1">
-  						<div class="col-3">
-  							<img src="img/user3.jpg">
-  							<p>Name</p>
-  						</div>
-  						<div class="col-9">
-  							<p>Navita Rating</p>
-  							<p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
-  						</div>
-  					</div>
-  				</div>
+        <div id="location-r-1">
+  			 <div class="col-9">
+  				  <div class="bottom-review">
+              <div class="row1">
+  						  <div class="col-3">
+  							 <img src="img/user1.jpg"><br><br>
+  							 <p><b>Name</b></p>
+                  <p class="mobile-display color-orangered">Location of reviewer</p>
+  						  </div>
+  						  <div class="col-9">
+  							 <p class="color-orangered">Navita Rating</p>
+  							 <p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
+  						  </div>
+  					 </div>
+  				  </div>
+  				  <div class="bottom-review desktop-display">
+  					 <div class="row1">
+  						  <div class="col-3">
+  							 <img src="img/user3.jpg"><br><br>
+  							 <p><b>Name</b></p>
+  						  </div>
+  						  <div class="col-9">
+  							 <p class="color-orangered">Navita Rating</p>
+  							 <p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
+  						  </div>
+  					 </div>
+  				  </div>
+           </div>
+          </div>
+          <div id="location-r-2">
+         <div class="col-9">
+            <div class="bottom-review">
+              <div class="row1">
+                <div class="col-3">
+                 <img src="img/user2.jpg"><br><br>
+                 <p><b>Name</b></p>
+                  <p class="mobile-display color-orangered">Location of reviewer</p>
+                </div>
+                <div class="col-9">
+                 <p class="color-orangered">Navita Rating</p>
+                 <p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
+                </div>
+             </div>
+            </div>
+            <div class="bottom-review desktop-display">
+             <div class="row1">
+                <div class="col-3">
+                 <img src="img/user1.jpg"><br><br>
+                 <p><b>Name</b></p>
+                </div>
+                <div class="col-9">
+                 <p class="color-orangered">Navita Rating</p>
+                 <p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
+                </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div id="location-r-3">
+         <div class="col-9">
+            <div class="bottom-review">
+              <div class="row1">
+                <div class="col-3">
+                 <img src="img/user3.jpg"><br><br>
+                 <p><b>Name</b></p>
+                  <p class="mobile-display color-orangered">Location of reviewer</p>
+                </div>
+                <div class="col-9">
+                 <p class="color-orangered">Navita Rating</p>
+                 <p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
+                </div>
+             </div>
+            </div>
+            <div class="bottom-review desktop-display">
+             <div class="row1">
+                <div class="col-3">
+                 <img src="img/user2.jpg"><br><br>
+                 <p><b>Name</b></p>
+                </div>
+                <div class="col-9">
+                 <p class="color-orangered">Navita Rating</p>
+                 <p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
+                </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div id="location-r-4">
+         <div class="col-9">
+            <div class="bottom-review">
+              <div class="row1">
+                <div class="col-3">
+                 <img src="img/user1.jpg"><br><br>
+                 <p><b>Name</b></p>
+                  <p class="mobile-display color-orangered">Location of reviewer</p>
+                </div>
+                <div class="col-9">
+                 <p class="color-orangered">Navita Rating</p>
+                 <p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
+                </div>
+             </div>
+            </div>
+            <div class="bottom-review desktop-display">
+             <div class="row1">
+                <div class="col-3">
+                 <img src="img/user2.jpg"><br><br>
+                 <p><b>Name</b></p>
+                </div>
+                <div class="col-9">
+                 <p class="color-orangered">Navita Rating</p>
+                 <p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
+                </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div id="location-r-5">
+         <div class="col-9">
+            <div class="bottom-review">
+              <div class="row1">
+                <div class="col-3">
+                 <img src="img/user2.jpg"><br><br>
+                 <p><b>Name</b></p>
+                  <p class="mobile-display color-orangered">Location of reviewer</p>
+                </div>
+                <div class="col-9">
+                 <p class="color-orangered">Navita Rating</p>
+                 <p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
+                </div>
+             </div>
+            </div>
+            <div class="bottom-review desktop-display">
+             <div class="row1">
+                <div class="col-3">
+                 <img src="img/user3.jpg"><br><br>
+                 <p><b>Name</b></p>
+                </div>
+                <div class="col-9">
+                 <p class="color-orangered">Navita Rating</p>
+                 <p>Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.Some text.</p>
+                </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="see-all-reviews">
+            <center><a href="#"><p>See all reviews</p></a></center>
+          </div>
   			</div>
   		</div>
   	</div>
@@ -297,7 +468,7 @@
   <!-- Footer -->
   <footer id="footer" >   
 	<div class="container-made"> 
-    <div>
+    <div class="navita-conditions">
       <center>
         <a href="#">About us</a> |
         <a href="#">Contact us</a> |
